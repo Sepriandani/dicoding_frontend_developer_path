@@ -1,0 +1,505 @@
+*,::before,::after{
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    text-decoration: none;
+}
+html{
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: rgb(249, 250, 251);
+    padding: 0;
+    margin: 0;
+}
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    position: fixed;
+}
+.container{
+    width: 100%;
+    margin: 1.5rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.logo-horizontal{
+    width: 12rem;
+    display: block;
+}
+.logo{
+    display: none;
+}
+#landing-menu{
+    display: block;
+    position: static;
+}
+.menu{
+    display: flex;
+    color: rgb(107, 114, 128);
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+li > a{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: rgb(107, 114, 128);
+}
+.menu > li > a:hover{
+    color: rgb(52, 211, 153);
+}
+.login-button-1,
+.login-button-2{
+    background-color: rgb(52, 211, 153);
+    padding: 0.6rem 2.5rem;
+    color: rgb(249, 250, 251);
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    font-weight: 600;
+}
+.login-button-1{
+    display: none;
+}
+
+.navbar-fixed{
+    position: fixed;
+    z-index: 9999;
+    background-color: rgb(255 255 255 / 0.7);
+    backdrop-filter: blur(5px);
+    box-shadow: 2px 2px 6px 1px rgb(200, 202, 205);
+}
+
+main{
+    margin-top: 10rem;
+}
+#content{
+    margin: 0 6rem 0 6rem;
+}
+article{
+    margin-bottom: 8rem;
+}
+#beranda,
+#tentangProduk{
+    display: flex;
+    gap: 1rem;
+}
+#beranda > img,
+#tentangProduk > img{
+    flex: 1 1 0%;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+#tentangProduk > img{
+    order: 1;
+}
+#beranda > div,
+#tentangProduk > div,
+.imgCard{
+    flex: 1 1 0%;
+}
+h1{
+    font-size: 4.5rem;
+    line-height: 5rem;
+}
+#beranda > div > h1 > span{
+    color: rgb(52, 211, 153);
+    flex: 1 1 0%;
+}
+p{
+    font-size: 1.4rem;
+    color: rgb(107, 114, 128);
+}
+.cta{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.cta > a:nth-child(1){
+    background-color: rgb(52, 211, 153);
+    padding: 1.2rem 6rem;
+    color: rgb(249, 250, 251);
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+.cta > a:nth-child(2){
+    padding: 1.2rem 4rem;
+    color: rgb(107, 114, 128) ;
+    font-size: 1.2rem;
+    border-width: 2px;
+    border-color: rgb(52, 211, 153);
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+#fitur,
+#developer,
+#kontak{
+    margin-bottom: 8rem;
+}
+#fitur > div:nth-child(1),
+#developer > div:nth-child(1),
+#kontak > div:nth-child(1){
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+#fitur > div:nth-child(1) > p,
+#developer > div:nth-child(1) > p,
+#kontak > div:nth-child(1) > p{
+    width: 75%;
+    margin: auto;
+}
+#fitur > div:nth-child(2),
+#kontak > div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.card{
+    background-color: white;
+    padding: 4rem 2rem;
+    flex: 1 1 0%;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 6px 1px rgb(200, 202, 205);
+}
+.card > p{
+    margin-top: 2rem;
+}
+.icon{
+    padding: 1.5rem;
+    background-color: rgb(220, 252, 231);
+    display: inline;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+}
+h2{
+    font-size: 2rem;
+    display: inline;
+    margin-left: 2rem;
+}
+.developerProfile{
+    display: flex;
+    gap: 3rem;
+}
+.developerImg{
+    height: 30rem;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+.developerImg > img{
+    width: 100%;
+}
+.developerName{
+    padding-left: 2rem;
+    margin-top: 1rem ;
+}
+.developerName > h3{
+    font-size: 1.5rem;
+    margin: 0;
+}
+.developerName > p{
+    margin: 0;
+}
+#kontak > div:nth-child(2) > div{
+    flex: 1 1 0%;
+    display: inline;
+}
+footer{
+    background-color: rgb(31, 41, 55);
+    color: rgb(249, 250, 251);
+    padding: 4rem 6rem;
+    text-align: center;
+}
+footer > img{
+    height: 5rem;
+}
+footer > ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+footer > ul > li > a{
+    color: rgb(200, 202, 205);
+}
+#hamburger{
+    display: none;
+}
+.container > button{
+    background-color: transparent;
+}
+.humburger-line{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: rgb(52, 211, 153);
+}
+
+/* tampilan table */
+@media screen and (max-width: 992px) {
+    h1{
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    P{
+        font-size: 2rem;
+    }
+    .container{
+        margin: 2rem 3rem;
+    }
+    
+    #landing-menu{
+        background-color: rgb(249, 250, 251);
+        box-shadow: -2px 2px 6px 2px rgb(200, 202, 205);
+        position: absolute;
+        top: 100%;
+        right: -1.25rem;
+        padding: 2rem;
+        display: none;
+    }
+    .logo-horizontal > img{
+        height: 5rem;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .menu > li > a{
+        font-size: 2rem;
+    }
+    .login-button-1{
+        display: block;
+        padding: 1rem 0;
+    }
+    .login-button-1 > a{
+        color: rgb(249, 250, 251);
+        font-size: 1.2rem;
+        justify-content: center;
+        font-weight: 600;
+        margin: 0;
+    }
+    .login-button-2{
+        display: none;
+    }
+    #content{
+        margin: 0 3rem;
+    }
+    article{
+        margin-bottom: 4rem;
+    }
+    #beranda,
+    #tentangProduk{
+        flex-direction: column;
+        text-align: center;
+    }
+    #beranda > img,
+    #tentangProduk > img{
+        width: 100%;
+        margin: 2rem 0;
+    }
+    #tentangProduk > img{
+        order: 2;
+    }
+    .cta{
+        margin-top: 4rem;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .cta > a:nth-child(1){
+        padding: 1rem 4 rem;
+        font-size: 2rem;
+        border-radius: 0.5rem;
+    }
+    .cta > a:nth-child(2){
+        padding: 1rem 1rem;
+        font-size: 2rem;
+        border-radius: 0.5rem;
+    }
+    #fitur > div:nth-child(1) > p,
+    #developer > div:nth-child(1) > p,
+    #kontak > div:nth-child(1) > p{
+        width: 100%;
+    }
+    #fitur > div:nth-child(2),
+    #kontak > div:nth-child(2){
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .card{
+        padding: 3rem 2rem;
+        border-radius: 0.5rem;
+    }
+    .icon{
+        padding: 1.5rem;
+        display: inline;
+        border-radius: 0.3rem;
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2.5rem;
+        display: inline;
+        margin-left: 1rem;
+    }
+    .developerProfile{
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+    .imgCard{
+        width: 75%;
+    }
+    .developerImg{
+        height: 35rem;
+        
+    }
+    #kontak > div:nth-child(2) {
+        align-items: center;
+        width: 100%;
+        gap: 3rem;
+    }
+    footer{
+        padding: 3rem 0.7rem;
+    }
+    footer > h1{
+        font-size: 4rem;
+    }
+    footer > img{
+        height: 7rem;
+    }
+    footer > ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    footer > ul > li > a{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    #hamburger{
+        display: block;
+    }
+    
+}
+
+/* Tampilan mobile */
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    P{
+        font-size: 1.2rem;
+    }
+    .container{
+        margin: 0.5rem 1rem;
+    }
+    .logo-horizontal{
+        display: none;
+    }
+    .logo{
+        display: block;
+    }
+    .logo > img{
+        width: 3rem;
+    }
+    .menu{
+        gap: 0.5rem;
+    }
+    .menu > li > a{
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    .login-button-1{
+        padding: 0.2rem 0.5rem;
+        margin-top: 2rem;
+    }
+    .login-button-1 > a{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    main{
+        margin-top: 6rem;
+    }
+    #content{
+        margin: 0.5rem;
+    }
+    .cta{
+        margin-top: 2rem;
+        gap: 1.5rem;
+    }
+    .cta > a:nth-child(1){
+        padding: 0.5rem 3rem;
+        font-size: 1rem;
+        border-radius: 0.3rem;
+    }
+    .cta > a:nth-child(2){
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border-radius: 0.3rem;
+    }
+    .card{
+        padding: 3rem 1rem;
+        border-radius: 0.5rem;
+    }
+    .icon{
+        padding: 1rem;
+        border-radius: 0.3rem;
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+    .developerProfile{
+        flex-direction: column;
+    }
+    .imgCard{
+        width: 100%;
+    }
+    .developerImg{
+        height: 24rem;
+    }
+    footer{
+        padding: 3rem 0.7rem;
+    }
+    footer > h1{
+        font-size: 2rem;
+    }
+    footer > img{
+        height: 4rem;
+    }
+    footer > ul{
+        gap: 0.5rem;
+    }
+    footer > ul > li > a{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
